@@ -1,7 +1,7 @@
 # RC Crawler Competition Tracker
 
 ## Project Details
-This project was created to get rid of the pen and paper tracking system implemented at current RC rock crawling competitions, thus reducing user error. As it  currently stands there are multiple standards for points systems that can vary from competition to competition. The ultimate goal of this project is to create a flexible application that can be used for various competitions and events with varying point multipliers.
+This project was created to reduce the time required for points tracking with current pen and paper tracking system implemented at current RC rock crawling competitions, thus reducing user error. As it  currently stands there are multiple standards for points systems that can vary from competition to competition. The ultimate goal of this project is to create a flexible application that can be used for various competitions and events with varying point multipliers.
 
 ## Technical Details 
 It will be made up of both a mobile application and a web application. Both applications will be backed by the same mongo database.
