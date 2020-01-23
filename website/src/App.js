@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 // bootstrap
-import "bootstrap/dist/css/bootstrap.min.css"
-import Button from "react-bootstrap/Button"
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
 
 import {
 	BrowserRouter as Router,
@@ -10,11 +10,11 @@ import {
 	Switch,
 	Link,
 	Redirect
-} from "react-router-dom"
+} from "react-router-dom";
 
 // Pages
-import MainPage from "./pages/index.js"
-import NotFoundPage from "./pages/404.js"
+import MainPage from "./pages/index.js";
+import NotFoundPage from "./pages/404.js";
 
 class App extends Component {
 	render() {
@@ -22,11 +22,13 @@ class App extends Component {
 			<Router>
 				<Switch>
 					<Route exact path="/" component={MainPage} />
-					<Route component={NotFoundPage} />
+					<Route exact path="/404" component={NotFoundPage} />
+
+					<Redirect to="/404" />
 				</Switch>
 			</Router>
-		)
+		);
 	}
 }
 
-export default App
+export default App;
